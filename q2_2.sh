@@ -1,2 +1,2 @@
 #!/bin/bash
-iecho "Hello World"
+echo "Hello World"
