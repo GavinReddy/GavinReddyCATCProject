@@ -17,6 +17,7 @@ generate_salary_table(){
 	echo "Year | Point | Salary"
 	echo "-----+-------+-------"
 	
+	salary=$starting_salary
 
 	for ((i = 1; i <= num_points; i++)); do
 		
@@ -25,14 +26,12 @@ generate_salary_table(){
 
 		if [ "$is_manager" = "y" ]; then
 		    salary=$((starting_salary + i * increment))
-		    i = $((  i + 1 ))
+		    i=$((  i + 1 ))
 		    echo "$this_year | $i   | $salary"
 		fi    
 	
-		
 		salary=$((starting_salary + i * increment))
 		this_year=$((this_year + 1 ))
-
 	done
 }
 
@@ -60,5 +59,5 @@ if [ "$is_manager" != "y" ] && [ "$is_manager" != "n" ]; then
 fi
 
 # Call the functio to generate the salary table
-generate_salary_table "$starting_salary" "$num_points" "$is_manager"
+generate_salary_table "$starting_salary" "$num_points" "$increment"  "$is_manager"
 
