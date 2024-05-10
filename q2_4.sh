@@ -12,14 +12,13 @@ read -p "Enter the number of points on the salary scale: " num_points
 # Request user to enter the salary increment
 read -p "Enter the salary increment: " increment
 
-# Request user to specify if the employess is a manager
+# Request user to specify if the employee is a manager
 read -p "Is the employee a manager? (y/n)" is_manager
 
-# check input is working
+# check input for employee status as a manaager or not is valid
 
-echo $starting_salary
-echo $num_points
-echo $increment
-echo $is_manager
-
+if [ "$is_manager" != "y" ] && [ "$is_manager" != "n" ]; then
+	echo "Invalid option. Enter 'y' or 'n' for manager status."
+	exit 1
+fi
 
