@@ -18,20 +18,30 @@ generate_salary_table(){
 	echo "-----+-------+-------"
 	
 	salary=$starting_salary
+	i=1
 
-	for ((i = 1; i <= num_points; i++)); do
-		
+
+	while [ $i -le $num_points ]
+       	do
+		if [ $i -gt $num_points ]; then
+			break
+		fi
+
 		echo "$this_year	| $i	| $salary"
 			
+		
 
-		if [ "$is_manager" = "y" ]; then
+		if [ "$is_manager" = "y" ] && [ $i -lt $num_points ] ; then
 		    salary=$((starting_salary + i * increment))
 		    i=$((  i + 1 ))
-		    echo "$this_year | $i   | $salary"
-		fi    
-	
-		salary=$((starting_salary + i * increment))
-		this_year=$((this_year + 1 ))
+		    echo "$this_year      | $i    | $salary"						
+          	fi
+		
+
+		   salary=$((starting_salary + i * increment))
+		   this_year=$((this_year + 1 ))
+ 		   i=$(( i + 1))
+
 	done
 }
 
