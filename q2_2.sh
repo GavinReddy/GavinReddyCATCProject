@@ -1,36 +1,42 @@
 #!/bin/bash
-echo "Command Output Begins"
-echo
-echo "date command"
-date
-echo
-echo "hostname command"
-hostname
-echo
-echo "arch command"
-arch
-echo
-echo "uname -a command"
-uname -a
-echo
-echo "uptime command"
-uptime
-echo
-echo "whoami command"
-whoami
-echo
-echo "who command"
-who
-echo
-echo "last command"
-last
-echo
-echo "w command"
-w
-echo
-echo "history command"
+
+# set first and last name for the textfile
+firstname="gavin"
+surname="Reddy"
+filename="$firstname$surname"
+
+echo "Command Output Begins" >> "$filename"
+echo >> "$filename"
+echo "date command" >> "$filename"
+date >> "$filename"
+echo >> "$filename"
+echo "hostname command" >> "$filename"
+hostname >> "$filename"
+echo >> "$filename"
+echo "arch command" >> "$filename"
+arch >> "$filename"
+echo >> "$filename"
+echo "uname -a command" >> "$filename"
+uname -a >> "$filename"
+echo >> "$filename"
+echo "uptime command" >> "$filename"
+uptime >> "$filename"
+echo >> "$filename"
+echo "whoami command" >> "$filename"
+whoami >> "$filename"
+echo >> "$filename"
+echo "who command" >> "$filename"
+who >> "$filename"
+echo >> "$filename"
+echo "last command" >> "$filename"
+last >> "$filename"
+echo >> "$filename"
+echo "w command" >> "$filename"
+w >> "$filename"
+echo >> "$filename"
+echo "history command" >> "$filename"
 # Need to read the history file
-history
-echo
-echo "Command Output Ends"
+history >> "$filename"
+echo >> "$filename"
+echo "Command Output Ends" >> "$filename"
 
