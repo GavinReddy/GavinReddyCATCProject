@@ -14,9 +14,9 @@ generate_salary_table(){
 	echo "Salary Scale Table for $this_year:"
 	echo "=================================="
 
-	echo "Year | Point | Salary"
-	echo "-----+-------+-------"
-	
+	echo "Year	|	 Point	|	Salary"
+	echo "--------+---------------+-------------"
+	# initialise loop variables	
 	salary=$starting_salary
 	i=1
 
@@ -27,17 +27,18 @@ generate_salary_table(){
 			break
 		fi
 
-		echo "$this_year	| $i	| $salary"
+		echo "$this_year	|	$i	|	$salary"
 			
 		
-
+		# Repeat if the employee is a manager and points have not been exceeded
 		if [ "$is_manager" = "y" ] && [ $i -lt $num_points ] ; then
+		    # Increase salary if the employee is a manager as managers receive two increments per year
 		    salary=$((starting_salary + i * increment))
 		    i=$((  i + 1 ))
-		    echo "$this_year      | $i    | $salary"						
+		    echo "$this_year    |	$i	|	$salary"						
           	fi
 		
-
+		# Increase salary for all employees inncluding manager and year value
 		   salary=$((starting_salary + i * increment))
 		   this_year=$((this_year + 1 ))
  		   i=$(( i + 1))
