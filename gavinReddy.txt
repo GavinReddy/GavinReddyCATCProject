@@ -1,0 +1,57 @@
+Command Output Begins
+
+date command
+Sun May 12 22:45:52 UTC 2024
+
+hostname command
+GavinReddyCATC
+
+arch command
+x86_64
+
+uname -a command
+Linux GavinReddyCATC 5.15.0-1063-azure #72~20.04.1-Ubuntu SMP Wed Apr 17 15:46:58 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+
+uptime command
+ 22:45:52 up 14:41,  1 user,  load average: 0.00, 0.00, 0.00
+
+whoami command
+gavinreddy
+
+who command
+gavinreddy pts/0        2024-05-12 18:20 (92.251.132.158)
+
+last command
+gavinred pts/0        92.251.132.158   Sun May 12 18:20   still logged in
+gavinred pts/0        92.251.132.158   Sun May 12 17:25 - 17:55  (00:30)
+gavinred pts/0        92.251.132.158   Sun May 12 16:01 - 17:23  (01:21)
+gavinred pts/0        92.251.132.158   Sun May 12 14:59 - 15:32  (00:32)
+reboot   system boot  5.15.0-1063-azur Sun May 12 08:04   still running
+reboot   system boot  5.15.0-1063-azur Sat May 11 15:37 - 07:48  (16:10)
+gavinred pts/0        92.251.132.158   Sat May 11 06:51 - 07:22  (00:31)
+gavinred pts/0        92.251.132.158   Fri May 10 15:19 - 21:37  (06:18)
+reboot   system boot  5.15.0-1063-azur Fri May 10 15:12 - 07:22  (16:10)
+gavinred pts/0        178.167.169.179  Thu May  9 19:37 - 22:08  (02:31)
+reboot   system boot  5.15.0-1059-azur Thu May  9 19:34 - 22:08  (02:34)
+gavinred pts/0        178.167.169.179  Mon May  6 19:53 - 20:31  (00:37)
+gavinred pts/0        178.167.169.179  Mon May  6 19:42 - 19:52  (00:09)
+reboot   system boot  5.15.0-1059-azur Mon May  6 19:39 - 20:32  (00:53)
+gavinred pts/0        178.167.169.179  Mon May  6 16:05 - 16:10  (00:05)
+gavinred pts/0        178.167.169.179  Mon May  6 15:04 - 16:00  (00:56)
+reboot   system boot  5.15.0-1059-azur Mon May  6 14:51 - 16:11  (01:19)
+gavinred pts/0        92.251.163.197   Mon Apr  8 10:53 - 11:21  (00:28)
+gavinred pts/0        92.251.163.197   Mon Apr  8 10:11 - 10:40  (00:28)
+reboot   system boot  5.15.0-1059-azur Mon Apr  8 10:02 - 11:23  (01:21)
+reboot   system boot  5.15.0-1059-azur Mon Apr  8 09:36 - 10:00  (00:24)
+reboot   system boot  5.15.0-1059-azur Mon Apr  8 06:02 - 09:32  (03:30)
+
+wtmp begins Mon Apr  8 06:02:31 2024
+
+w command
+ 22:45:52 up 14:41,  1 user,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+gavinred pts/0    92.251.132.158   18:20    0.00s  0.25s  0.00s w
+
+history command
+
+Command Output Ends
