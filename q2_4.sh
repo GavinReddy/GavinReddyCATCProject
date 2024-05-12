@@ -8,7 +8,7 @@ generate_salary_table(){
 	local starting_salary=$1
 	local num_points=$2
 	local increment=$3
-	local is_managger=$4
+	local is_manager=$4
 	local this_year=$(date +%Y)
 
 	echo "Salary Scale Table for $this_year:"
@@ -38,7 +38,7 @@ generate_salary_table(){
 		    echo "$this_year    |	$i	|	$salary"						
           	fi
 		
-		# Increase salary for all employees inncluding manager and year value
+		# Increase salary for all employees including manager and year value
 		   salary=$((starting_salary + i * increment))
 		   this_year=$((this_year + 1 ))
  		   i=$(( i + 1))
@@ -69,6 +69,6 @@ if [ "$is_manager" != "y" ] && [ "$is_manager" != "n" ]; then
 	exit 1
 fi
 
-# Call the functio to generate the salary table
+# Call the function to generate the salary table
 generate_salary_table "$starting_salary" "$num_points" "$increment"  "$is_manager"
 
