@@ -1,2 +1,13 @@
 #!/bin/bash
-echo "Hello World"
+
+date
+hostname
+arch
+uname -a
+uptime
+whoami
+who
+last
+w
+history
+
