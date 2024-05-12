@@ -3,7 +3,7 @@
 # set first and last name for the textfile
 firstname="gavin"
 surname="Reddy"
-filename="$firstname$surname"
+filename="$firstname$surname.txt"
 
 echo "Command Output Begins" >> "$filename"
 echo >> "$filename"
